@@ -4,6 +4,18 @@ import os
 DATA_FILE = "data.json"
 
 def load_config():
+    # Try Streamlit secrets first (for cloud deployment)
+    try:
+        import streamlit as st
+        if hasattr(st, 'secrets') and 'ibm' in st.secrets:
+            return {
+                "apikey": st.secrets["ibm"]["apikey"],
+                "url": st.secrets["ibm"]["url"]
+            }
+    except:
+        pass
+    
+    # Fall back to local data.json
     if not os.path.exists(DATA_FILE):
         raise FileNotFoundError(f"{DATA_FILE} not found.")
     
