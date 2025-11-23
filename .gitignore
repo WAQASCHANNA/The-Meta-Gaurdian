@@ -9,7 +9,6 @@ compliance_report.pdf
 # Python
 __pycache__/
 *.pyc
-.streamlit/
 
 # System
 .DS_Store
