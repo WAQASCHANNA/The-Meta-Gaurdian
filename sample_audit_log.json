@@ -1,0 +1,92 @@
+[
+  {
+    "timestamp": "2025-11-23T17:30:51.576764",
+    "original_decision": {
+      "agent_name": "LoanApprovalBot",
+      "applicant": "John Doe",
+      "loan_amount": 15000,
+      "credit_score": 720,
+      "decision": "APPROVED"
+    },
+    "compliance_check": {
+      "compliant": true,
+      "violation_type": null,
+      "message": "Decision complies with credit policy."
+    }
+  },
+  {
+    "timestamp": "2025-11-23T18:00:51.577505",
+    "original_decision": {
+      "agent_name": "LoanApprovalBot",
+      "applicant": "Jane Smith",
+      "loan_amount": 75000,
+      "credit_score": 580,
+      "decision": "APPROVED"
+    },
+    "compliance_check": {
+      "compliant": false,
+      "violation_type": "High Risk Loan",
+      "message": "Credit score 580 is below minimum threshold of 600."
+    }
+  },
+  {
+    "timestamp": "2025-11-23T18:30:51.577535",
+    "original_decision": {
+      "agent_name": "HiringBot",
+      "candidate": "Alice Johnson",
+      "years_experience": 5,
+      "education": "Masters",
+      "decision": "INTERVIEW"
+    },
+    "compliance_check": {
+      "compliant": true,
+      "violation_type": null,
+      "message": "Decision complies with hiring policy."
+    }
+  },
+  {
+    "timestamp": "2025-11-23T18:45:51.577556",
+    "original_decision": {
+      "agent_name": "HiringBot",
+      "candidate": "Bob Chen",
+      "years_experience": 3,
+      "education": "Bachelors",
+      "decision": "REJECT"
+    },
+    "compliance_check": {
+      "compliant": false,
+      "violation_type": "Potential Bias",
+      "message": "Candidate name 'Bob Chen' may indicate demographic bias in rejection pattern."
+    }
+  },
+  {
+    "timestamp": "2025-11-23T19:00:51.577564",
+    "original_decision": {
+      "agent_name": "ExpenseApprovalBot",
+      "employee": "Marketing Team",
+      "expense_amount": 12000,
+      "category": "Conference",
+      "decision": "APPROVED"
+    },
+    "compliance_check": {
+      "compliant": false,
+      "violation_type": "Excessive Expense",
+      "message": "Expense amount $12000 exceeds limit of $10000."
+    }
+  },
+  {
+    "timestamp": "2025-11-23T19:15:51.577572",
+    "original_decision": {
+      "agent_name": "ExpenseApprovalBot",
+      "employee": "Sales Team",
+      "expense_amount": 3500,
+      "category": "Client Dinner",
+      "decision": "APPROVED"
+    },
+    "compliance_check": {
+      "compliant": true,
+      "violation_type": null,
+      "message": "Decision complies with expense policy."
+    }
+  }
+]

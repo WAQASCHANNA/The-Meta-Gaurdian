@@ -5,6 +5,7 @@ import time
 import os
 
 LOG_FILE = "audit_log.json"
+SAMPLE_LOG_FILE = "sample_audit_log.json"
 
 st.set_page_config(page_title="MetaGuardian Dashboard", layout="wide")
 
@@ -12,13 +13,23 @@ st.title("🛡️ MetaGuardian: AI Governance & Compliance Orchestrator")
 st.markdown("### Addressing the meta-challenge of governing AI systems themselves")
 
 def load_data():
-    if not os.path.exists(LOG_FILE):
-        return []
-    try:
-        with open(LOG_FILE, "r") as f:
-            return json.load(f)
-    except:
-        return []
+    # Try to load real audit log first (for local development)
+    if os.path.exists(LOG_FILE):
+        try:
+            with open(LOG_FILE, "r") as f:
+                return json.load(f)
+        except:
+            pass
+    
+    # Fall back to sample data (for cloud deployment)
+    if os.path.exists(SAMPLE_LOG_FILE):
+        try:
+            with open(SAMPLE_LOG_FILE, "r") as f:
+                return json.load(f)
+        except:
+            pass
+    
+    return []
 
 # Auto-refresh mechanism
 placeholder = st.empty()
