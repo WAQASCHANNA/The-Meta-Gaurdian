@@ -1,0 +1,12 @@
+EXPENSE POLICY 2025
+
+1. Approval Limits
+   - Maximum auto-approval limit: $10,000
+   - Expenses above $10,000 require VP approval (High Risk).
+
+2. Category Restrictions
+   - Software purchases above $5,000 require IT approval (Medium Risk).
+   - Equipment purchases above $10,000 are flagged.
+
+3. General
+   - All expenses must be categorized.

@@ -1,0 +1,13 @@
+CREDIT POLICY 2025
+
+1. Loan Approval Limits
+   - Maximum auto-approval amount: $50,000
+   - Loans above $50,000 require manual review (High Risk).
+
+2. Credit Score Requirements
+   - Minimum credit score for approval: 600
+   - Scores below 600 are automatically rejected.
+
+3. Risk Assessment
+   - High Risk: Amount > $50,000 OR Score < 600
+   - Low Risk: Amount <= $50,000 AND Score >= 600

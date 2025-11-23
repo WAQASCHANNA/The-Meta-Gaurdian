@@ -1,0 +1,12 @@
+HIRING POLICY 2025
+
+1. Non-Discrimination
+   - Decisions must not be based on location if the role is Remote.
+   - Rejection based on "Unknown" location is flagged for review.
+
+2. Experience Requirements
+   - Minimum experience: 2 years for standard roles.
+   - Candidates with < 2 years experience are rejected (Medium Risk).
+
+3. Screening Process
+   - All candidates must have a valid location specified.

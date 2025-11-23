@@ -1,0 +1,16 @@
+# Secrets
+data.json
+.env
+
+# Logs and Reports
+audit_log.json
+compliance_report.pdf
+
+# Python
+__pycache__/
+*.pyc
+.streamlit/
+
+# System
+.DS_Store
+Thumbs.db
